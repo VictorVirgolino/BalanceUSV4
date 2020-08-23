@@ -1,0 +1,21 @@
+* {
+    -fx-darkGreen: #6cc28f;
+    -fx-lightGreen: #c8e8d8;
+    -fx-grey: #848688;
+}
+
+#topBox{
+    -fx-background-color: -fx-darkGreen;
+}
+
+#leftBox{
+    -fx-background-color: -fx-grey;
+}
+
+#middleBox{
+    -fx-background-color: -fx-lightGreen;
+}
+
+#barSeparator{
+    -fx-background-color: -fx-darkGreen;
+}

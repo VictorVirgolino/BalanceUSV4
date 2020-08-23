@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ultrasomma.SecondaryController">
+   <top>
+      <HBox fx:id="topBox" spacing="525.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="BalanceUS">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#switchToPrimary" prefHeight="44.0" prefWidth="82.0" text="back">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </HBox>
+   </top>
+   <center>
+      <TabPane fx:id="middleBox" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="afrafepTab" text="Afrafep">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="160.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="168.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valéria" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalG1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="quantL1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="totalL1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="quantV1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="totalV1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="erros1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                        <Label text="Procedimentos" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantP1" editable="false" layoutX="637.0" layoutY="255.0" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13"/>
+                        <TextField fx:id="totalP1" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+          </Tab>
+            <Tab fx:id="afrafepTab1" text="Caixa">
+               <content>
+                  <GridPane>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valéria" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalG2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="quantL2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="totalL2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="quantV2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="totalV2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="erros2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                        <Label text="Procedimentos" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantP2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalP2" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="160.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="168.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab fx:id="afrafepTab2" text="Cassi">
+               <content>
+                  <GridPane>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valéria" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalG3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="quantL3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="totalL3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="quantV3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="totalV3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="erros3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                        <TextField fx:id="quantP3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Procedimentos" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalP3" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="160.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="168.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab fx:id="afrafepTab3" text="Embrapa">
+               <content>
+                  <GridPane>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valéria" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalG4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="quantL4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="totalL4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="quantV4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="totalV4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="erros4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                        <Label text="Procedimentos" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantP4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalP4" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="160.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="168.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab fx:id="unimedTab" text="Unimed">
+               <content>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="160.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="516.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.0" minWidth="10.0" prefWidth="168.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="testetxt5" text="Total Arrecadado em Filme:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado em Filme:" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valeria" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado em Filme:" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="19">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="20">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="filmeG5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="totalG5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="quantL5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="filmeL5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <TextField fx:id="totalL5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <TextField fx:id="quantV5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                        <TextField fx:id="filmeV5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+                        <TextField fx:id="totalV5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <TextField fx:id="erros5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="20" />
+                        <Label text="Procedimentos" GridPane.rowIndex="15">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantP5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalP5" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab fx:id="afrafepTab31" text="Todos os Convênios">
+               <content>
+                  <GridPane>
+                     <children>
+                        <Label text="Geruza">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Laurise" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Valéria" GridPane.rowIndex="8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Exames Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Erros" GridPane.rowIndex="16">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Erros Encontrados:" GridPane.columnIndex="1" GridPane.rowIndex="17">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantG6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="totalG6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="quantL6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <TextField fx:id="totalL6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <TextField fx:id="quantV6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <TextField fx:id="totalV6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                        <TextField fx:id="erros6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+                        <Label text="Procedimentos" GridPane.rowIndex="12">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label text="Quantidade de Procedimentos Realizados:" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="quantP6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                        <Label text="Total Arrecadado:" GridPane.columnIndex="1" GridPane.rowIndex="14">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="totalP6" editable="false" maxWidth="100.0" text="0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="160.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="535.0" minWidth="10.0" prefWidth="463.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="168.0" />
+                     </columnConstraints>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </Tab>
+        </tabs>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TabPane>
+   </center>
+</BorderPane>
